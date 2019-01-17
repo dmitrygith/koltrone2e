@@ -26,18 +26,18 @@ public class RegistrationNewAcc {
                 "stage",
                 "stagetest");
 
-        $(By.xpath(registrationPage.firstNameField)).setValue(RandomData.dataRandom(9));
-        $(By.xpath(registrationPage.lastNameField)).setValue(RandomData.dataRandom(13));
-        $(By.xpath(registrationPage.addressField)).setValue(RandomData.dataRandom(23));
-        $(By.xpath(registrationPage.cityField)).setValue(RandomData.dataRandom(7));
-        $(By.xpath(registrationPage.usernameField)).setValue(RandomData.dataRandom(13));
-        $(By.xpath(registrationPage.bonusCodeField)).setValue(RandomData.dataRandom(5));
+        $(By.xpath(registrationPage.firstNameField)).setValue(RandomData.srtingRandom(9));
+        $(By.xpath(registrationPage.lastNameField)).setValue(RandomData.srtingRandom(13));
+        $(By.xpath(registrationPage.addressField)).setValue(RandomData.srtingRandom(23));
+        $(By.xpath(registrationPage.cityField)).setValue(RandomData.srtingRandom(7));
+        $(By.xpath(registrationPage.usernameField)).setValue(RandomData.srtingRandom(13)).getText();
+        $(By.xpath(registrationPage.bonusCodeField)).setValue(RandomData.srtingRandom(5));
         $(By.xpath(registrationPage.mobileField)).setValue(RandomData.phoneRandom());
         $(By.xpath(registrationPage.dateOfBirthField)).setValue(RandomData.dObRandom());
         $(By.xpath(registrationPage.postcodeField)).setValue(randomData.postCode);
         Random randomGenerator = new Random();
-        int randomInt = randomGenerator.nextInt(1000);
-        $(By.xpath(registrationPage.emailField)).sendKeys("username"+ randomInt +"@test.com");
+        int randomInt = randomGenerator.nextInt(10000);
+        $(By.xpath(registrationPage.emailField)).sendKeys("username" + randomInt + "@test.com"); //if you need clear DB (@test.com)
         $(By.xpath(registrationPage.passwordField)).setValue(randomData.passwordNewAcc);
         $(By.xpath(registrationPage.confirmPasswordField)).setValue(randomData.passwordNewAcc);
         $(By.xpath(registrationPage.personalDataProcessingCheckBox)).click();
@@ -49,6 +49,7 @@ public class RegistrationNewAcc {
         $(By.xpath(registrationPage.currencyField)).selectOption(3);
         $(By.xpath(registrationPage.submitButtonRegistration)).click();
 
-        System.out.println("OK");
+        System.out.println(registrationPage.usernameField);
     }
 }
+//FIXME!!!!!!ADD ASSert !!! need remove reCapcha JS team

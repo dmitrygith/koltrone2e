@@ -1,5 +1,7 @@
 package com.reloadbet.elements;
 
+
+
 public class DropDownAccMenu {
 
     public String accDropMenuButton = ".osg-user-container__balance > div:nth-of-type(1) .osg-money";
