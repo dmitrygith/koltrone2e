@@ -9,7 +9,7 @@ public class RandomData {
     private static final String ALPHABET = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
     private static final SecureRandom RANDOM = new SecureRandom();
 
-    public static String dataRandom(int count) {
+    public static String srtingRandom(int count) {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < count; ++i) {
             sb.append(ALPHABET.charAt(RANDOM.nextInt(ALPHABET.length())));
@@ -48,7 +48,6 @@ public class RandomData {
                     dd = random(1, 28);
                 }
                 break;
-
             case 1:
             case 3:
             case 5:
@@ -95,6 +94,7 @@ public class RandomData {
 
         return false;
     }
+
     public String postCode = "123456test";
     public String passwordNewAcc = "Admin123";
 }
