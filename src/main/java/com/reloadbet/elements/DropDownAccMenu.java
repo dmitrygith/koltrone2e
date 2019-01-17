@@ -16,6 +16,6 @@ public class DropDownAccMenu {
     public String balanceTitleMoneyHomepage = ".osg-user-container__real-money-title";
     public String moneySum = ".osg-user-container__real-money-value .osg-money";
     public String menuContainer = ".osg-dropdown__content";
-
 }
+
 
