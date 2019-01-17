@@ -1,10 +1,5 @@
 package com.reloadbet.elements;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-
 public class DropDownAccMenu {
 
     public String accDropMenuButton = ".osg-user-container__balance > div:nth-of-type(1) .osg-money";
@@ -19,12 +14,6 @@ public class DropDownAccMenu {
     public String balanceTitleMoneyHomepage = ".osg-user-container__real-money-title";
     public String moneySum = ".osg-user-container__real-money-value .osg-money";
     public String menuContainer = ".osg-dropdown__content";
-
-    @FindBy(linkText = "История ставок")
-    private WebElement historyBets;
-    public void clickHistoryBetLink {
-        historyBets.click();
-    }
-
 }
+
 
