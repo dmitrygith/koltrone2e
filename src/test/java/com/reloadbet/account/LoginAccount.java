@@ -14,7 +14,7 @@ public class LoginAccount extends BaseClass {
 
     @Test
 
-    public void loginUser() {
+     void loginUser() {
         Url url = new Url();
         ReloadHomePage reloadHomePage = new ReloadHomePage();
         TestAccount testAccount = new TestAccount();

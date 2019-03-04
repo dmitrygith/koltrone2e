@@ -13,8 +13,9 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 public class BetsHistoryCheck {
+
     @Test
-    public void loginUser() {
+     void loginUser() {
         Url url = new Url();
         ReloadHomePage reloadHomePage = new ReloadHomePage();
         TestAccount testAccount = new TestAccount();
@@ -31,7 +32,7 @@ public class BetsHistoryCheck {
     }
 
     @Test
-    public void dropDownMenu() {
+     void dropDownMenu() {
         DropDownAccMenu dropDownAccMenu = new DropDownAccMenu();
         BetsHistoryPage betsHistoryPage = new BetsHistoryPage();
         //Test

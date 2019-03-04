@@ -18,12 +18,6 @@ public class BaseClass {
     }
 
     @AfterEach
-    void resetSetting() {
-        Configuration.reopenBrowserOnFail = true;
-        Configuration.browser = "firefox";
-    }
-
-    @AfterEach
     void tearDown() {
         WebDriverRunner.setProxy(null);
         close();

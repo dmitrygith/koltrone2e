@@ -12,7 +12,7 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class AccountDropDownMenuCheck {
     @Test
-    public void loginUser() {
+     void loginUser() {
         Url url = new Url();
         ReloadHomePage reloadHomePage = new ReloadHomePage();
         TestAccount testAccount = new TestAccount();
@@ -29,7 +29,7 @@ public class AccountDropDownMenuCheck {
     }
 
     @Test
-    public void dropDownMenu() {
+     void dropDownMenu() {
         DropDownAccMenu dropDownAccMenu = new DropDownAccMenu();
 
         //Test

@@ -14,7 +14,7 @@ import static com.codeborne.selenide.Selenide.$;
 public class SportsbookCoupon {
 
     @Test
-    public void loginUser() {
+     void loginUser() {
         Url url = new Url();
         ReloadHomePage reloadHomePage = new ReloadHomePage();
         TestAccount testAccount = new TestAccount();
@@ -30,7 +30,7 @@ public class SportsbookCoupon {
     }
 
     @Test
-    public void sportsbookLoad() {
+     void sportsbookLoad() {
         ReloadHomePage reloadHomePage = new ReloadHomePage();
         SportsBookPage sportsBookPage = new SportsBookPage();
         ErrorCodes errorCodes = new ErrorCodes();
@@ -56,7 +56,7 @@ public class SportsbookCoupon {
     }
 
     @Test
-    public void sportsMenu() {
+     void sportsMenu() {
         SportsBookPage sportsBookPage = new SportsBookPage();
 
         $(sportsBookPage.footballCoupon).shouldBe(Condition.visible);
@@ -79,7 +79,7 @@ public class SportsbookCoupon {
     }
 
     @Test
-    public void footballExtension() {
+     void footballExtension() {
         SportsBookPage sportsBookPage = new SportsBookPage();
 
         $(sportsBookPage.footballCoupon).click();

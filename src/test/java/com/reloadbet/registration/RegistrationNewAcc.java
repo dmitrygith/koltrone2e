@@ -15,7 +15,7 @@ public class RegistrationNewAcc {
 
 
     @Test
-    public void registrationNewAcc() {
+     void registrationNewAcc() {
 
         Url url = new Url();
         RegistrationPage registrationPage = new RegistrationPage();
@@ -49,7 +49,7 @@ public class RegistrationNewAcc {
         $(By.xpath(registrationPage.currencyField)).selectOption(3);
         $(By.xpath(registrationPage.submitButtonRegistration)).click();
 
-        System.out.println(registrationPage.usernameField);
+        System.out.println("OK");
     }
 }
-//FIXME!!!!!!ADD ASSert !!! need remove reCapcha JS team
+//FIXME!!!!!!ADD Check !!! need remove reCapcha JS team
